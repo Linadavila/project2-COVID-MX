@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v4.0.1">
+    <title>Album example · Bootstrap</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/album/">
+
+    <!-- D3 and Plotly -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.9.7/d3.min.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+    <!-- ======================== -->
+
+    <!-- Bootstrap core CSS -->
+<link href="../static/assets/dist/css/bootstrap.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    <!-- Custom styles for this template -->
+    <!-- This is the navbar -->
+    <link href="../static/css/album.css" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+  <div class="collapse bg-dark" id="navbarHeader">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-8 col-md-7 py-4">
+          <h4 class="text-white">About</h4>
+          <p class="text-muted">The corona virus is still affecting the mexican population. While most of the information is related to the total of cases, here are shown only the new daily cases added into the mexican database. The information changes everyday.</p>
+        </div>
+        <div class="col-sm-4 offset-md-1 py-4">
+          <h4 class="text-white">Official information</h4>
+          <ul class="list-unstyled">
+            <li><a href="https://covid19.who.int/" target="_blank" class="text-white">WHO</a></li>
+            <li><a href="https://coronavirus.gob.mx/datos/" target="_blank" class="text-white">Coronavirus in Mexico</a></li>
+            <li><a href="https://datos.cdmx.gob.mx/explore/dataset/casos-asociados-a-covid-19/table/?disjunctive.resultado" target="_blank" class="text-white">Mexican Database</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="navbar navbar-dark bg-dark shadow-sm">
+    <div class="container d-flex justify-content-between">
+      <a href="#" class="navbar-brand d-flex align-items-center">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="mr-2" viewBox="0 0 24 24" focusable="false"><circle cx="12" cy="13" r="8"/></svg>
+        <strong>COVID in Mexico</strong>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+
+<!-- Container for the graphs -->
+{% block content %}
+<div class="container"> 
+  
+</div>
+{% endblock %}
+
+
+<!-- ============================= -->
+
+<!-- D3 script-->
+<script src="https://d3js.org/d3.v5.min.js"></script>
+
+<!-- ============================== -->
+
+<!-- Footer for buttons -->
+
+<footer class="text-muted">
+    <div class="container">
+      <p class="float-right">
+        <!-- <a href="#">Back to top</a> -->
+      </p>
+      <p>To get information, press any button.</p> 
+      <a href="/map/" class="btn btn-outline-dark" role="button">MAP</a>
+      <a href="/plots/" class="btn btn-outline-dark" role="button">Daily Cases</a>
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery.slim.min.js"><\/script>')</script><script src="../static/assets/dist/js/bootstrap.bundle.js"></script>
+    </body>
+  </html>
